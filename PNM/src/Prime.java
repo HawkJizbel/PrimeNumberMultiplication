@@ -1,17 +1,21 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Prime {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[][] prime = new int[3][3];
-		int[][] invprime = new int[3][3];
-		int[][] finalprime = new int[3][3];
+		
+		Scanner inp = new Scanner(System.in);
+		System.out.println("Enter the prime number");
+		int pnum = inp.nextInt();
+		
+		int[][] prime = new int[pnum][pnum];
+		int[][] invprime = new int[pnum][pnum];
+		int[][] finalprime = new int[pnum][pnum];
+		
 		prime[0][0] = 2;
 		prime[0][1] = 3;
 		prime[0][2] = 5;
-
 
 		for (int i = 0; i < prime.length; i++) {
 			for (int j = 0; j < prime[i].length; j++) {
@@ -37,8 +41,8 @@ public class Prime {
 				for (int j = 0; j < finalprime[i].length; j++) {
 					for (int k = 0; k < finalprime.length; k++) {
 						for (int l = 0; l < finalprime.length; l++) {
-							finalprime[i][j] = prime[k][l] * invprime[j][i];
-							System.out.print(finalprime[i][j] + " ");
+							finalprime[k][l] = prime[k][l] * invprime[j][i];
+							System.out.print(finalprime[k][l] + " ");
 						}
 						break;
 					}
@@ -46,7 +50,7 @@ public class Prime {
 				}
 				break;
 			}
-			System.out.print(Arrays.deepToString(finalprime));
 		}
+		inp.close();
 	}
 }
