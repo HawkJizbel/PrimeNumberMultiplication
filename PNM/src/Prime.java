@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Prime {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[][] prime = new int[3][3];
@@ -10,6 +11,7 @@ public class Prime {
 		prime[0][0] = 2;
 		prime[0][1] = 3;
 		prime[0][2] = 5;
+
 
 		for (int i = 0; i < prime.length; i++) {
 			for (int j = 0; j < prime[i].length; j++) {
@@ -38,11 +40,13 @@ public class Prime {
 							finalprime[i][j] = prime[k][l] * invprime[j][i];
 							System.out.print(finalprime[i][j] + " ");
 						}
+						break;
 					}
 					System.out.print("\n");
 				}
+				break;
 			}
-			//System.out.print(Arrays.deepToString(finalprime));
+			System.out.print(Arrays.deepToString(finalprime));
 		}
 	}
 }
