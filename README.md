@@ -1,4 +1,4 @@
-# PrimeNumberMultiplication
+# Prime Number Multiplication
 
 The code calculates the prime number and then transposes it and outputs the Prime Number Multiplication Table. 
 The code was programmed in Java. 
