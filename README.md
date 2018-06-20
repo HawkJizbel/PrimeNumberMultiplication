@@ -8,7 +8,3 @@ Instructions on how to run the code:
 2. Hit Enter and the output will be displayed.
 
 Software used to run Java code : https://www.eclipse.org
-
-Pleased with the high value prime number calculation and how the matrix multiplication is executed. 
-
-If I had more time, I would change the arrays to array list to help improve array management to avoid heap memory exception error. 
